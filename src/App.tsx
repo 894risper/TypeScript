@@ -1,6 +1,7 @@
 
 import './App.css'
-import UseState from './hooks/UseState'
+
+import NewTask from './taskManager/NewTask'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     
     <>
-<UseState/>
+<NewTask/>
     </>
         
     
