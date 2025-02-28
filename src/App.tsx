@@ -1,20 +1,14 @@
-
-import './App.css'
-
-import NewTask from './taskManager/NewTask'
+import React from 'react';
+import Intro from './components/Intro';
 
 
-function App() {
- 
+const App: React.FC = () => {
 
   return (
-    
-    <>
-<NewTask/>
-    </>
-        
-    
-  )
-}
+   <div>
+   <Intro/>
+   </div> 
+  );
+};
 
-export default App
+export default App;

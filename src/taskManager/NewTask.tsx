@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import {useForm} from "react-hook-form";
 import  toast, {Toaster} from "react-hot-toast"
 import { STATUSES } from "../constants/Status";
-
+import {Input} from '../ui/inputs';
 type Inputs={
     title: string;
     description:string;
@@ -31,7 +31,7 @@ toast.success("task sadded successfully")
    <form onSubmit={handleSubmit(handleFormSubmit)}>
     <div>
         <label htmlFor="title">Title
-<input type="text"
+<Input type="text"
 
 {...register("title",{
     required:"the title is required",
@@ -51,7 +51,7 @@ toast.success("task sadded successfully")
     </div>
     <div>
         <label htmlFor="description">Description
-<input type="text"
+<Input type="text"
 {...register("description",{
     required:"the description is required",
 
@@ -71,7 +71,7 @@ toast.success("task sadded successfully")
     </div>
 <div>
 <label htmlFor="deadline">Deadline
-<input type="date"
+<Input type="date"
 {...register("deadline",{
    required:"the deadline is required" 
 })}
